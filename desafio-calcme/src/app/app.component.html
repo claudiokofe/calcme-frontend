@@ -1,0 +1,29 @@
+
+
+<form class="container" (ngSubmit)="onSubmit()">
+  <h1>Desafio Calcme</h1>
+  <div>
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" value ="" required [(ngModel)]="usuario.nome" name="nome" placeholder="Nome" required>
+    </div>
+
+    <div>
+      <label for="email">E-Mail:</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="usuario.email" name="email" placeholder="E-Mail" required>
+    </div>
+
+    <div>
+      <label for="telefone">Telefone:</label>
+      <input type="text" class="form-control" id="telefone" required [(ngModel)]="usuario.telefone" name="telefone" placeholder="Telefone" required>
+    </div>
+
+    <button type="submit" class="btn btn-success" >Enviar</button>
+  </form>
+
+<footer class="footer">
+    <div class="container">
+        <span>By: Claudio Carvalho dos Santos Arnaldo
+        </span>
+    </div>
+
+</footer>
